@@ -3947,6 +3947,10 @@ tbody.collapse.show {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(85,85,85,0)), to(rgba(85,85,85,1)), color-stop(0,#000000));
+  color: white;
+  height: 100px;
+  max-width: none !important;
 }
 
 .navbar > .container,
@@ -3962,6 +3966,9 @@ tbody.collapse.show {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: none;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .navbar-brand {
@@ -3989,6 +3996,8 @@ tbody.collapse.show {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  font-weight: 400;
+  font-size: 1.25em;
 }
 
 .navbar-nav .nav-link {
@@ -4189,8 +4198,8 @@ tbody.collapse.show {
     left: auto;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 1.0rem;
+    padding-left: 1.0rem;
   }
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
@@ -4386,7 +4395,8 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
+  font
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -4815,15 +4825,20 @@ tbody.collapse.show {
 }
 
 .badge {
+  margin-left: 20px;
+  padding: 2px 15px;
   display: inline-block;
-  padding: 0.25em 0.4em;
-  font-size: 75%;
-  font-weight: 700;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
+  border: solid 1.5px;
+}
+
+.badge a {
+  color: white;
+}
+
+.badge a:hover {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
 }
 
 .badge:empty {
@@ -6075,7 +6090,8 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #007bff !important;
+  /* background-color: #007bff !important; */
+  background-color: #000000 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,

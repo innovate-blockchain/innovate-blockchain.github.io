@@ -4,16 +4,116 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
-header {
-  padding: 154px 0 100px;
+.navbar-brand img {
+  height: 100px;
+  width: 100px;
+  ap
 }
 
-@media (min-width: 992px) {
-  header {
-    padding: 156px 0 100px;
-  }
+header {
+  height: 700px
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  margin: 48px auto;
+  vertical-align: middle;
+  padding-left: 20%;
+}
+
+.title h1 {
+  font-size: 4.75em;
 }
 
 section {
   padding: 150px 0;
+}
+
+.left{
+  padding: 156px 0 100px;
+  width: 50%;
+  float: left;
+  display: absolute;
+}
+
+@media (max-width: 600px) {
+  .title {
+    padding-left: 0px;
+  }
+
+    .left {
+        width: 100%;
+    }
+}
+
+.right{
+  height: 100%;
+  width: 50%;
+  float: left;
+  display: absolute;
+}
+
+@media (max-width: 800px) {
+    .left, .right {
+        width: 100% !important;
+    }
+
+    header {
+      height: 1400px;
+    }
+
+    .signup-background {
+      width: 90% !important;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .signup-background {
+        background-size: auto 100%!important;
+    }
+}
+
+.signup-background {
+  content: '';
+	width: 45%;
+  height: 700px;
+	background-image: url("../res/bis-logo-no-text.png");
+  background-repeat: no-repeat;
+  background-size: 120% auto;
+  background-position: top;
+  background-position: center;
+	opacity: 0.2;
+	position: absolute;
+  z-index: 0;
+}
+
+.signup-form {
+  padding: 150px 0px 100px 60px;
+  opacity: 1;
+  position: relative;
+}
+
+.signup-form h2 {
+  font-size: 1.75em;
+  font-weight: 300;
+  padding-bottom: 48px;
+}
+
+.input-cluster {
+  padding-bottom: 30px;
+}
+
+.input-cluster label {
+  width: 100%;
+  font-size: 1.25em;
+}
+
+.input-cluster input, .input-cluster select {
+  width: 80%;
+  text-align: right;
+  height: 40px;
+  border-radius: 10px;
+  padding-right: 30px;
 }
