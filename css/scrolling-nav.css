@@ -26,10 +26,6 @@ header {
   font-size: 4.75em;
 }
 
-section {
-  padding: 150px 0;
-}
-
 .left{
   padding: 156px 0 100px;
   width: 50%;
@@ -93,6 +89,7 @@ section {
   padding: 150px 0px 100px 60px;
   opacity: 1;
   position: relative;
+  width: 80%;
 }
 
 .signup-form h2 {
@@ -108,12 +105,301 @@ section {
 .input-cluster label {
   width: 100%;
   font-size: 1.25em;
+  margin-bottom: 0px;
 }
 
 .input-cluster input, .input-cluster select {
-  width: 80%;
+  width: 100%;
   text-align: right;
   height: 40px;
   border-radius: 10px;
   padding-right: 30px;
+}
+
+.checkboxes {
+  overflow: hidden;
+}
+
+.checkboxes input {
+  margin-right: 10px;
+}
+
+.submit-button {
+  padding-top: 15px;
+  float: right;
+}
+
+.submit-button button {
+  text-transform: capitalize;
+  width: 200px;
+  background-color: white;
+}
+
+#main-background {
+  background-image: url("../res/long-lines.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: center;
+  width: 100%;
+}
+
+#bottom-background {
+  background-image: url("../res/short-lines.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: center;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.section-marker {
+  width: 100%;
+  margin: 50px 0px;
+  overflow: hidden;
+}
+
+.section-marker img {
+  float: right;
+  height: 40px;
+  width: auto;
+  margin-right: 10%;
+}
+
+section {
+  padding: 0;
+}
+
+#about .row {
+  margin-bottom: 30px;
+}
+
+.about-image {
+  vertical-align: middle;
+}
+
+.about-image img {
+  margin-left: 120px;
+  height: 80px;
+  width: auto;
+}
+
+.image-group {
+  width: 80%;
+  margin: 40px auto 0px auto;
+}
+
+.committee-images {
+  width: 24.25%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.committee-images img {
+  height: 80px;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.select-arrow {
+  height: 80px;
+  width: 75px;
+  margin: 20px auto auto auto;
+  display: block;
+  vertical-align: bottom;
+  opacity: .4;
+  visibility: hidden;
+}
+
+.select-arrow img {
+  vertical-align: bottom;
+  margin-bottom: 0px;
+  height: 80px;
+  width: auto;
+}
+
+.committee-preview {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding: 70px 0px 120px 0px;
+}
+
+.committee-preview  h2 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.event {
+  margin: 50px 0;
+}
+
+.event h3 {
+  font-size: 1.5em;
+}
+
+.fa-angle-left, .fa-angle-right {
+  padding-top: 1px;
+  color: black;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  margin-top: 180px;
+}
+
+.carousel-item h3 {
+  text-align: center;
+}
+
+.carousel-item img {
+  height: 125px;
+  width: 125px;
+  margin:  0 auto 20px auto;
+  border-radius: 62px;
+  border: 2px solid #949494;
+}
+
+.sponsor-description {
+  width: 60%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.sponsor-icons {
+  padding-top: 30px;
+}
+
+.sponsor-icons img {
+  width: 14%;
+  margin-left: 2%;
+  margin-right: 3%;
+  height: auto;
+}
+
+.person-picture {
+  width: 25%;
+  float: left;
+  margin-top: 40px;
+}
+
+.person-picture img {
+  height: 130px;
+  width: 130px;
+  margin: 0 auto 20px auto;
+  border-radius: 75px;
+  border: 2px solid #000000;
+}
+
+.person-picture p {
+  margin-bottom: 0;
+}
+
+.picture-group {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.member-names {
+  font-size: 0.9em;
+  min-width: 150px;
+  width: 14%;
+  display: inline-block;
+  float: left;
+}
+
+.member-names p {
+  margin: 0;
+}
+
+.contact-form {
+  margin: 50px 0;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-input-group {
+  width: 100%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.contact-input-group label {
+  margin: 0;
+}
+
+.contact-input-group input, .contact-input-group textarea {
+  width: 100%;
+  text-align: right;
+  height: 40px;
+  border-radius: 10px;
+  padding-right: 30px;
+}
+
+.contact-submit-button button {
+  margin: auto;
+  display: block;
+}
+
+.contact-name {
+  width: 50%;
+}
+
+.contact-name input {
+  width: 90%;
+}
+
+.contact-name label {
+  font-size: .5em;
+}
+
+.donations {
+  color: white;
+}
+
+#content {
+  background: linear-gradient(#ffffff, #eeeeee, #000000);
+  color: black;
+}
+
+footer {
+  padding-top: 50px;
+  height: 300px;
+  background-color: black;
+}
+
+.footer-image {
+  width: 11%;
+  float: left;
+}
+
+footer div img {
+  margin: auto;
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+.donation-options {
+  margin: 100px 0;
+  overflow: hidden;
+}
+
+.donation-coin {
+  width: 25%;
+  float: left;
+  display: inline-block;
+}
+
+.donation-coin img {
+  height: auto;
+  width: 70%;
+}
+
+.donation-coin p {
+  margin-top: 10px;
 }

@@ -26,4 +26,9 @@
     offset: 54
   });
 
+  var setHeight = $("#content").height();
+  $("#main-background").height(setHeight * .8);
+  $("#bottom-background").height(setHeight * .25);
+  $("#bottom-background").css('margin-top',setHeight * .75);
+
 })(jQuery); // End of use strict
