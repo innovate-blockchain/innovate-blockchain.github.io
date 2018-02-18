@@ -160,29 +160,29 @@
       <div>
         <div class="container">
           <div class="image-group">
-            <div class="committee-images">
+            <div class="committee-images" onClick="changeCommittee('research')">
               <img src="res/library.png">
-              <div class="select-arrow" style="visibility: visible"><img src="res/triangle.png"></div>
+              <div class="select-arrow" id="research-arrow" style="visibility: visible"><img src="res/triangle.png"></div>
             </div>
-            <div class="committee-images">
+            <div class="committee-images" onClick="changeCommittee('investment')">
               <img src="res/invest.png">
-              <div class="select-arrow"><img src="res/triangle.png"></div>
+              <div class="select-arrow" id="investment-arrow"><img src="res/triangle.png"></div>
             </div>
-            <div class="committee-images">
+            <div class="committee-images" onClick="changeCommittee('education')">
               <img src="res/grad-cap.png">
-              <div class="select-arrow"><img src="res/triangle.png"></div>
+              <div class="select-arrow" id="education-arrow"><img src="res/triangle.png"></div>
             </div>
-            <div class="committee-images">
+            <div class="committee-images" onClick="changeCommittee('consulting')">
               <img src="res/building.png">
-              <div class="select-arrow"><img src="res/triangle.png"></div>
+              <div class="select-arrow" id="consulting-arrow"><img src="res/triangle.png"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="committee-preview">
         <div class="container">
-          <h2>Research & Development</h2>
-          <p>This committee researches new advances in the field, both at the protocol level and the application level. In addition, those who are developers, or are aspiring developers, will be working on creating and testing the ideas from our research and consulting committee</p>
+          <h2 id="committee-header">Research & Development</h2>
+          <p id="committee-description">This committee researches new advances in the field, both at the protocol level and the application level. In addition, those who are developers, or are aspiring developers, will be working on creating and testing the ideas from our research and consulting committee</p>
         </div>
       </div>
 

@@ -32,3 +32,30 @@
   $("#bottom-background").css('margin-top',setHeight * .75);
 
 })(jQuery); // End of use strict
+
+function changeCommittee(changeTo) {
+  $("#research-arrow").css('visibility', 'hidden');
+  $("#investment-arrow").css('visibility', 'hidden');
+  $("#education-arrow").css('visibility', 'hidden');
+  $("#consulting-arrow").css('visibility', 'hidden');
+  if (changeTo == "research") {
+    $("#research-arrow").css('visibility', 'visible');
+    $("#committee-header").text("Research & Development");
+    $("#committee-description").text("This committee researches new advances in the field, both at the protocol level and the application level. In addition, those who are developers, or are aspiring developers, will be working on creating and testing the ideas from our research and consulting committee");
+  }
+  if (changeTo == "investment") {
+    $("#investment-arrow").css('visibility', 'visible');
+    $("#committee-header").text("Investment");
+    $("#committee-description").text("Investment Committee Message");
+  }
+  if (changeTo == "education") {
+    $("#education-arrow").css('visibility', 'visible');
+    $("#committee-header").text("Education");
+    $("#committee-description").text("Education Committee Message");
+  }
+  if (changeTo == "consulting") {
+    $("#consulting-arrow").css('visibility', 'visible');
+    $("#committee-header").text("Consulting");
+    $("#committee-description").text("Consulting Committee Message");
+  }
+}

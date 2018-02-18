@@ -142,6 +142,7 @@ header {
   background-size: auto;
   background-position-x: center;
   width: 100%;
+  z-index: 0;
 }
 
 #bottom-background {
@@ -194,6 +195,7 @@ section {
   width: 24.25%;
   display: inline-block;
   vertical-align: bottom;
+  cursor: pointer;
 }
 
 .committee-images img {
@@ -201,6 +203,7 @@ section {
   width: auto;
   margin: auto;
   display: block;
+  position: relative;
 }
 
 .select-arrow {
