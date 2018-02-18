@@ -279,6 +279,7 @@ section {
   margin-left: 2%;
   margin-right: 3%;
   height: auto;
+  border-radius: 25px;
 }
 
 .person-picture {
