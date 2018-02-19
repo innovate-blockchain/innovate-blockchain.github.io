@@ -33,21 +33,25 @@ header {
   display: absolute;
 }
 
+.right{
+  height: 100%;
+  width: 50%;
+  float: left;
+  display: absolute;
+}
+
 @media (max-width: 600px) {
   .title {
     padding-left: 0px;
   }
 
     .left {
-        width: 100%;
+      width: 100%;
     }
-}
 
-.right{
-  height: 100%;
-  width: 50%;
-  float: left;
-  display: absolute;
+    .footer-image img {
+      height: 25px !important;
+    }
 }
 
 @media (max-width: 800px) {
@@ -63,9 +67,35 @@ header {
       width: 90% !important;
     }
 
+    .committee-images {
+
+    }
+
+    .committee-images img {
+      height: 40px !important;
+    }
+
+    /*.person-picture img {
+      height: 95px !important;
+      width: 95px !important;
+    }
+
+    .person-picture p {
+      font-size: .75em !important;
+    }*/
+
+    .person-picture img {
+      height: 65px !important;
+      width: 65px !important;
+    }
+
+    .person-picture p {
+      font-size: .5em !important;
+    }
+
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 990px) {
     .signup-background {
         background-size: auto 100%!important;
     }
@@ -153,6 +183,7 @@ header {
   background-position-x: center;
   margin-bottom: 0px;
   width: 100%;
+  z-index: 0;
 }
 
 .section-marker {
@@ -166,10 +197,12 @@ header {
   height: 40px;
   width: auto;
   margin-right: 10%;
+  position: relative;
 }
 
 section {
   padding: 0;
+  position: relative;
 }
 
 #about .row {
@@ -192,7 +225,7 @@ section {
 }
 
 .committee-images {
-  width: 24.25%;
+  width: 23%;
   display: inline-block;
   vertical-align: bottom;
   cursor: pointer;
@@ -207,8 +240,8 @@ section {
 }
 
 .select-arrow {
-  height: 80px;
-  width: 75px;
+  height: auto;
+  width: 100%;
   margin: 20px auto auto auto;
   display: block;
   vertical-align: bottom;
@@ -275,7 +308,7 @@ section {
 }
 
 .sponsor-icons img {
-  width: 14%;
+  width: 13%;
   margin-left: 2%;
   margin-right: 3%;
   height: auto;
@@ -298,6 +331,8 @@ section {
 
 .person-picture p {
   margin-bottom: 0;
+  overflow: hidden;
+  margin-right: 20px;
 }
 
 .picture-group {
