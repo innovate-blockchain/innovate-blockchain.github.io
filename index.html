@@ -38,18 +38,17 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#events">Events</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#sponsers">Sponsers</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-            <span style="margin: 10px 0px; border-right: 1px solid #fff; margin-right: 20px;"></span>
             <li class="nav-item">
-              <span class="badge"><a href="/content">Content</a></span>
+              <a class="nav-link js-scroll-trigger" href="#donate">Donate</a>
             </li>
           </ul>
         </div>
@@ -66,7 +65,7 @@
       </div>
       <div class="right">
         <div class="signup-background"></div>
-        <form class="signup-form">
+        <!-- <form class="signup-form">
           <h2>Sign up for all updates and newsletters</h2>
           <div class="input-cluster">
             <label>Name</label>
@@ -99,7 +98,7 @@
           <div class="submit-button">
             <button class="btn" type="submit">SUBMIT</button>
           </div>
-        </form>
+        </form>-->
 
       </div>
     </header>
@@ -107,9 +106,10 @@
     <div id="content">
       <div id="main-background"></div>
       <div id="bottom-background"></div>
-      <div class="section-marker"><img src="res/home.png"></div>
+      <!-- <div class="section-marker"><img src="res/home.png"></div> -->
       <section id="about">
         <div class="container">
+          <h2 style="margin-bottom: 50px">About</h2>
           <div class="row">
             <div class="col-lg-4 mx-auto about-image">
               <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
@@ -145,12 +145,12 @@
         </div>
       </section>
 
-      <div class="section-marker"><img src="res/home.png"></div>
+      <!-- <div class="section-marker"><img src="res/home.png"></div> -->
       <section id="committees">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 mx-auto">
-              <h2>Committees</h2>
+              <h2 style="margin-bottom: 50px">Committees</h2>
               <p class="lead">The Blockchain Innovation Society is made up of four core committees in which we operate. These committees are R&D, investment, education and consulting. We also have an advanced group that assists with more applied projects requiring a higher level of skill and understanding.These committees are led by the current leaders, and meet with members outside of the general meetings. These committees are meant to represent the diversity within the blockhain ecosystem, helping students find which area interests them the most and focus on improving their skills in that area.</p>
             </div>
           </div>
@@ -160,19 +160,19 @@
         <div class="container">
           <div class="image-group">
             <div class="committee-images" onClick="changeCommittee('research')">
-              <img src="res/library.png">
+              <img id="research-image" src="res/library.png">
               <div class="select-arrow" id="research-arrow" style="visibility: visible"><img src="res/triangle.png"></div>
             </div>
             <div class="committee-images" onClick="changeCommittee('investment')">
-              <img src="res/invest.png">
+              <img id="investment-image" style="opacity: 0.3" src="res/invest.png">
               <div class="select-arrow" id="investment-arrow"><img src="res/triangle.png"></div>
             </div>
             <div class="committee-images" onClick="changeCommittee('education')">
-              <img src="res/grad-cap.png">
+              <img id="education-image" style="opacity: 0.3" src="res/grad-cap.png">
               <div class="select-arrow" id="education-arrow"><img src="res/triangle.png"></div>
             </div>
             <div class="committee-images" onClick="changeCommittee('consulting')">
-              <img src="res/building.png">
+              <img id="consulting-image" style="opacity: 0.3" src="res/building.png">
               <div class="select-arrow" id="consulting-arrow"><img src="res/triangle.png"></div>
             </div>
           </div>
@@ -185,35 +185,68 @@
         </div>
       </div>
 
-      <div class="section-marker"><img src="res/calendar.png"></div>
+      <!-- <div class="section-marker"><img src="res/calendar.png"></div> -->
       <section id="events">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 mx-auto">
-              <h2>Upcoming Events</h2>
-              <div class="event">
-                <h3>Joel, ICO and Ethical Marketing - 01/29/2018</h3>
-                <p class="lead">lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum lorum ipsum liece orum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum liece lorum</p>
-              </div>
-              <div class="event">
-                <h3>Investment Committee Meeting - 01/30/2018</h3>
-                <p class="lead">lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum lorum ipsum liece orum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum liece lorum</p>
-              </div>
-              <div class="event">
-                <h3>Consulting Committee Meeting - 01/31/2018</h3>
-                <p class="lead">lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum lorum ipsum liece orum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum liece lorum</p>
-              </div>
-              <div class="event">
-                <h3>Phoenix Blockchain Meetup - 04/20/2018</h3>
-                <p class="lead">lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum lorum ipsum liece orum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum ipsum liece lorum liece lorum</p>
-              </div>
-              <h3 style="float: right">Full Calendar > ></h3>
+              <h2 style="margin-bottom: 25px">Events</h2>
             </div>
           </div>
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <h3>Monday</h3>
+            </div>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead"><b>General Meeting</b></p>
+              <p class="lead">7:30 PM</p>
+              <p class="lead">Lattie F. Coor Hall, Tempe, Room 170</p>
+              <p class="lead">COOR 170</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <h3>Tuesday</h3>
+            </div>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead"><b>Investment Meeting</b></p>
+              <p class="lead">6:00 PM</p>
+              <p class="lead">John W. Schwada Building, Tempe, Room 252</p>
+              <p class="lead">SCOB 252</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <h3>Wednesday</h3>
+            </div>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead"><b>Consulting Meeting</b></p>
+              <p class="lead">6:00 PM</p>
+              <p class="lead">G Wing, 501 E Tyler Mall, Tempe, Room 305</p>
+              <p class="lead">ECG 305</p>
+              <br>
+              <p class="lead"><b>Education Meeting</b></p>
+              <p class="lead">7:00 PM</p>
+              <p class="lead">G Wing, 501 E Tyler Mall, Tempe, Room 305</p>
+              <p class="lead">ECG 305</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <h3>Thursday</h3>
+            </div>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead"><b>Research & Development Meeting</b></p>
+              <p class="lead">7:30 PM</p>
+              <p class="lead">G Wing, 501 E Tyler Mall, Tempe, Room 214</p>
+              <p class="lead">ECG 214</p>
+            </div>
+          </div>
+              <a id="calendar-link" href="https://calendar.google.com/calendar/embed?src=asu.edu_hvqgicrifp6d0rvqt6htd2k6k8%40group.calendar.google.com&ctz=America%2FPhoenix"><h3 style="float: right">Full Calendar > ></h3></a>
         </div>
       </section>
 
-      <div class="section-marker"><img src="res/handshake.png"></div>
+      <!-- <div class="section-marker"><img src="res/handshake.png"></div>
       <section id="sponsers">
         <div class="container">
           <div class="row">
@@ -264,14 +297,14 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <div class="section-marker"><img src="res/home.png"></div>
+      <!-- <div class="section-marker"><img src="res/home.png"></div> -->
       <section id="team">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 mx-auto">
-              <h2>Leadership</h2>
+              <h2>Team</h2>
               <div class="picture-group">
                 <div style="overflow: hidden">
                   <div class="person-picture">
@@ -314,7 +347,6 @@
                   </div>
                 </div>
               </div>
-              <h2>Advisors</h2>
                 <div class="picture-group">
                   <div class="person-picture">
                     <img src="res/white.jpeg">
@@ -336,7 +368,7 @@
                   </div>
                 </div>
               </div>
-              <h2>Society Members</h2>
+              <!--<h2>Society Members</h2>
               <div style="margin-top: 40px">
                 <div class="member-names">
                   <p>lorum ipsum liece</p>
@@ -415,29 +447,27 @@
                   <p>lorum ipsum liece</p>
                   <p>lorum ipsum liece</p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
       </section>
 
-      <div class="section-marker"><img src="res/mail.png"></div>
+      <!-- <div class="section-marker"><img src="res/mail.png"></div> -->
       <section id="contact">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2>Contact us</h2>
+              <h2 style="color: #cccccc">Contact</h2>
               <form class="contact-form">
                 <div class="contact-input-group">
                   <label>Name</label>
                   <div style="width: 100%; margin-bottom: 20px; overflow: hidden">
                     <div class="contact-name" style="float: left">
-                      <input type="text" placeholder="John"></input>
-                      <label>First Name</label>
+                      <input type="text" placeholder="First"></input>
                     </div>
                     <div class="contact-name" style="float: right">
-                      <input type="text" placeholder="Smith" style="float: right;"></input>
+                      <input type="text" placeholder="Last" style="float: right;"></input>
                       <div style="width: 90%; float: right;">
-                        <label>Last Name</label>
                       </div>
                     </div>
                   </div>
@@ -445,10 +475,6 @@
                 <div class="contact-input-group">
                   <label>Email Address</label>
                   <input type="text" placeholder="blockchain@gmail.com"></input>
-                </div>
-                <div class="contact-input-group">
-                  <label>Organization</label>
-                  <input type="text" placeholder="Technology Store"></input>
                 </div>
                 <div class="contact-input-group">
                   <label>Subject</label>
@@ -465,11 +491,13 @@
             </div>
           </div>
         </div>
-
-        <div class="donations">
+      </section>
+      <section id="donate">
+        <div class="container">
+          <div class="donations">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 style="text-align: center;">Donations</h2>
+            <div class="col-lg-12 mx-auto">
+              <h2>Donate</h2>
               <div class="donation-options">
                 <div class="donation-coin">
                   <img src="res/white.jpeg">
@@ -491,6 +519,7 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
     </div>
 
@@ -498,12 +527,12 @@
     <footer>
       <div class="container">
         <div class="footer-image"><img src="res/home-white.png"></div>
-        <div class="footer-image"><img src="res/Team.png"></div>
+        <div class="footer-image"><img src="res/team.png"></div>
         <div class="footer-image"><img src="res/committees-white.png"></div>
         <div class="footer-image"><img src="res/content-white.png"></div>
         <div class="footer-image"><img src="res/calendar-white.png"></div>
-        <div class="footer-image"><img src="res/Sponsors.png"></div>
-        <div class="footer-image"><img src="res/Slack.png"></div>
+        <div class="footer-image"><img src="res/sponsors.png"></div>
+        <div class="footer-image"><img src="res/slack.png"></div>
         <div class="footer-image"><img src="res/drive-white.png"></div>
         <div class="footer-image"><img src="res/contact-white.png"></div>
       </div>
