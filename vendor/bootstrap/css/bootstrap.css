@@ -601,7 +601,6 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  width: 100%;
 }
 
 .no-gutters {
@@ -3950,8 +3949,8 @@ tbody.collapse.show {
   padding: 0.5rem 1rem;
   background: linear-gradient(#555555, #000000);
   color: white;
-  height: 100px;
-  max-width: none !important;
+  /*height: 100px;
+  max-width: none !important;*/
 }
 
 .navbar > .container,
@@ -4199,8 +4198,8 @@ tbody.collapse.show {
     left: auto;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.0rem;
-    padding-left: 1.0rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
@@ -4826,19 +4825,14 @@ tbody.collapse.show {
 }
 
 .badge {
-  padding: 2px 15px;
-  display: inline-block;
-  border-radius: 1rem;
-  border: solid 1.5px;
-}
-
-.badge a {
-  color: white;
-}
-
-.badge a:hover {
-  color: rgba(255, 255, 255, 0.75);
-  text-decoration: none;
+  padding: 0.25em 0.4em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 0.25rem;
 }
 
 .badge:empty {
@@ -8988,4 +8982,4 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+# sourceMappingURL=bootstrap.css.map

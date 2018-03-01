@@ -21,7 +21,7 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-inverse navbar-expand-sm navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="res/bis-logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -458,15 +458,15 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h2 style="color: #cccccc">Contact</h2>
-              <form class="contact-form">
+              <form id="gform" class="contact-form" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzUqD52htBT0uoRGyiB7HsrJfyXj2GE-RJznd2aiUN-MsxdFJc/exec">
                 <div class="contact-input-group">
                   <label>Name</label>
                   <div style="width: 100%; margin-bottom: 20px; overflow: hidden">
                     <div class="contact-name" style="float: left">
-                      <input type="text" placeholder="First"></input>
+                      <input name="firstname" type="text" placeholder="First"></input>
                     </div>
                     <div class="contact-name" style="float: right">
-                      <input type="text" placeholder="Last" style="float: right;"></input>
+                      <input name="lastname" type="text" placeholder="Last" style="float: right;"></input>
                       <div style="width: 90%; float: right;">
                       </div>
                     </div>
@@ -474,20 +474,24 @@
                 </div>
                 <div class="contact-input-group">
                   <label>Email Address</label>
-                  <input type="text" placeholder="blockchain@gmail.com"></input>
+                  <input name="email" type="text" placeholder="blockchain@gmail.com"></input>
                 </div>
                 <div class="contact-input-group">
                   <label>Subject</label>
-                  <input type="text" placeholder="Education"></input>
+                  <input name="subject" type="text" placeholder="Education"></input>
                 </div>
                 <div class="contact-input-group">
                   <label>Message</label>
-                  <textarea placeholder="I want to charter at a new university, who should I talk to?" style="text-align: left; height: 180px;"></textarea>
+                  <textarea name="message" placeholder="I want to charter at a new university, who should I talk to?" style="text-align: left; height: 180px;"></textarea>
                 </div>
                 <div class="contact-submit-button">
                   <button class="btn" type="submit">SUBMIT</button>
                 </div>
               </form>
+              <div style="display:none;" id="thankyou_message">
+                <h2><em>Thanks</em> for filling out our test form!
+                  We will get back to you soon!</h2>
+              </div>
             </div>
           </div>
         </div>
@@ -526,15 +530,16 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="footer-image"><img src="res/home-white.png"></div>
-        <div class="footer-image"><img src="res/team.png"></div>
-        <div class="footer-image"><img src="res/committees-white.png"></div>
-        <div class="footer-image"><img src="res/content-white.png"></div>
-        <div class="footer-image"><img src="res/calendar-white.png"></div>
-        <div class="footer-image"><img src="res/sponsors.png"></div>
-        <div class="footer-image"><img src="res/slack.png"></div>
-        <div class="footer-image"><img src="res/drive-white.png"></div>
-        <div class="footer-image"><img src="res/contact-white.png"></div>
+        <div>
+          <div class="footer-image"><a href="https://www.instagram.com/innovateblockchain/"><img src="res/facebook.png"></a></div>
+          <div class="footer-image"><a href="https://www.linkedin.com/company/bisasu"><img src="res/facebook.png"></a></div>
+          <div class="footer-image"><a href="https://twitter.com/BIS_Innovate"><img src="res/facebook.png"></a></div>
+          <div class="footer-image"><a href="..."><img src="res/facebook.png"></a></div>
+          <div class="follow-us"><p>Follow Us</p></div>
+        </div>
+        <div>
+          <p class="copyright">Copyright Innovate Blockchain, LLC<p>
+        </div>
       </div>
     </footer>
 
@@ -550,6 +555,8 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
+
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 
   </body>
 

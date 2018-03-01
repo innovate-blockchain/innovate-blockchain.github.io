@@ -34,6 +34,7 @@ header {
 }
 
 .right{
+  padding-top: 100px;
   height: 100%;
   width: 50%;
   float: left;
@@ -47,10 +48,6 @@ header {
 
     .left {
       width: 100%;
-    }
-
-    .footer-image img {
-      height: 25px !important;
     }
 }
 
@@ -107,12 +104,12 @@ header {
 
 .signup-background {
   content: '';
-	width: 45%;
-  height: 700px;
+	width: 50%;
+  height: 600px;
 	background-image: url("../res/bis-logo-no-text.png");
   background-repeat: no-repeat;
-  background-size: 120% auto;
-  background-position: top;
+  background-size: 100% auto;
+  background-position: center;
   background-position: center;
 	/*opacity: 0.2; */
 	position: absolute;
@@ -413,14 +410,19 @@ section {
 }
 
 footer {
-  padding-top: 50px;
-  height: 300px;
+  padding-top: 20px;
+  height: 100px;
   background-color: black;
+  border-top: 1px solid #525252;
+}
+
+footer div {
+  overflow: hidden;
 }
 
 .footer-image {
-  width: 11%;
-  float: left;
+  width: auto;
+  float: right;
 }
 
 footer div img {
@@ -428,6 +430,7 @@ footer div img {
   display: block;
   height: 40px;
   width: auto;
+  padding: 0px 7px;
 }
 
 .donation-options {
@@ -472,4 +475,19 @@ section {
 
 .lead b {
   font-weight: 600;
+}
+
+.follow-us {
+  float: right;
+  color: white;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.copyright {
+  color: #dddddd;
+  font-size: 9px;
 }
