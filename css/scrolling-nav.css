@@ -162,7 +162,6 @@ header {
   margin-top: 2%;
   background-position: center;
   background-position: center;
-  margin-left: 25%;
   margin-top: 12%;
 	/*opacity: 0.2; */
   z-index: 0;
@@ -544,7 +543,7 @@ section {
   font-size: 9px;
 }
 .coming-soon {
-  margin-left: 37%;
+ align-content: center;
   margin-top: 2%;
   font-family: 'Pro-Regular';
     font-weight: bold;
