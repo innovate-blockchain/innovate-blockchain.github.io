@@ -8,6 +8,11 @@
     src: url('../assets/fonts/SourceSansPro-Regular.ttf'); /*URL to font*/
 }
 @font-face {
+    font-family: 'Pro-Regular'; /*a name to be used later*/
+    src: url('../assets/fonts/SF-Pro-Display-Regular.otf'); /*URL to font*/
+}
+
+@font-face {
     font-family: 'Bold'; /*a name to be used later*/
     src: url('../assets/fonts/SourceSansPro-Bold.ttf'); /*URL to font*/
 }
@@ -158,7 +163,7 @@ header {
   background-position: center;
   background-position: center;
   margin-left: 25%;
-  margin-top: 8%;
+  margin-top: 12%;
 	/*opacity: 0.2; */
   z-index: 0;
 }
@@ -541,6 +546,8 @@ section {
 .coming-soon {
   margin-left: 37%;
   margin-top: 2%;
-  font-family: 'Bold';
+  font-family: 'Pro-Regular';
+    font-weight: bold;
     font-size: 60px;
+    font-color:#2E313A;
 }
