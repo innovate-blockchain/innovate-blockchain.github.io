@@ -111,8 +111,9 @@ header {
   background-size: 100% auto;
   background-position: center;
   background-position: center;
+  margin-left: 25%;
+  margin-top: 2%;
 	/*opacity: 0.2; */
-	position: absolute;
   z-index: 0;
 }
 
@@ -490,4 +491,8 @@ section {
 .copyright {
   color: #dddddd;
   font-size: 9px;
+}
+.coming-soon {
+  margin-left: 40%;
+  margin-top: 2%;
 }
