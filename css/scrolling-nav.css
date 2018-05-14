@@ -7,7 +7,6 @@
 .navbar-brand img {
   height: 100px;
   width: 100px;
-  ap
 }
 
 header {
@@ -105,9 +104,10 @@ header {
 .signup-background {
   content: '';
 	width: 50%;
-  height: 600px;
-	background-image: url("../res/bis-logo-no-text.png");
+  height: 500px;
+	background-image: url("../res/bis_mark-20.svg");
   background-repeat: no-repeat;
+  margin-top: 2%;
   background-size: 100% auto;
   background-position: center;
   background-position: center;
