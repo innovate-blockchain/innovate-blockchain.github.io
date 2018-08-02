@@ -1,0 +1,552 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+@font-face {
+    font-family: 'Regular'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Pro-Regular'; /*a name to be used later*/
+    src: url('../assets/fonts/SF-Pro-Display-Regular.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Bold'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-Bold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Black'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-Black.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'BlackItalic'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-BlackItalic.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'BoldItalic'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-BoldItalic.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'ExtraLight'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-ExtraLight.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'ExtraLightItalic'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-ExtraLightItalic.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Italic'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-Italic.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Light'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-Light.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'LightItalic'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-LightItalic.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Semibold'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-Semibold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'SemiboldItalic'; /*a name to be used later*/
+    src: url('../assets/fonts/SourceSansPro-SemiboldItalic.ttf'); /*URL to font*/
+}
+.navbar-brand img {
+  height: 100px;
+  width: 100px;
+}
+
+header {
+  height: 700px
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  margin: 48px auto;
+  vertical-align: middle;
+  padding-left: 20%;
+}
+
+.title h1 {
+  font-size: 4.75em;
+}
+
+.left{
+  padding: 156px 0 100px;
+  width: 50%;
+  float: left;
+  display: absolute;
+}
+
+.right{
+  padding-top: 100px;
+  height: 100%;
+  width: 50%;
+  float: left;
+  display: absolute;
+}
+
+@media (max-width: 600px) {
+  .title {
+    padding-left: 0px;
+  }
+
+    .left {
+      width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .left {
+        width: 100% !important;
+    }
+
+    .right {
+      display: none;
+    }
+
+    header {
+      height: 700px;
+    }
+
+    .signup-background {
+      width: 90% !important;
+    }
+
+    .committee-images {
+
+    }
+
+    .committee-images img {
+      height: 40px !important;
+    }
+
+    /*.person-picture img {
+      height: 95px !important;
+      width: 95px !important;
+    }
+
+    .person-picture p {
+      font-size: .75em !important;
+    }*/
+
+    .person-picture img {
+      height: 65px !important;
+      width: 65px !important;
+    }
+
+    .person-picture p {
+      font-size: .5em !important;
+    }
+
+}
+
+@media (min-width: 990px) {
+    .signup-background {
+        background-size: auto 100%!important;
+    }
+}
+
+.signup-background {
+  content: '';
+	width: 50%;
+  height: 150px;
+	background-image: url("../res/bis_mark-20.svg");
+  background-repeat: no-repeat;
+  margin-top: 2%;
+  background-position: center;
+  background-position: center;
+  margin-top: 12%;
+	/*opacity: 0.2; */
+  z-index: 0;
+}
+
+.signup-form {
+  padding: 150px 0px 100px 60px;
+  opacity: 1;
+  position: relative;
+  width: 80%;
+}
+
+.signup-form h2 {
+  font-size: 1.75em;
+  font-weight: 300;
+  padding-bottom: 48px;
+}
+
+.input-cluster {
+  padding-bottom: 30px;
+}
+
+.input-cluster label {
+  width: 100%;
+  font-size: 1.25em;
+  margin-bottom: 0px;
+}
+
+.input-cluster input, .input-cluster select {
+  width: 100%;
+  text-align: right;
+  height: 40px;
+  border-radius: 10px;
+  padding-right: 30px;
+}
+
+.checkboxes {
+  overflow: hidden;
+}
+
+.checkboxes input {
+  margin-right: 10px;
+}
+
+.submit-button {
+  padding-top: 15px;
+  float: right;
+}
+
+.submit-button button {
+  text-transform: capitalize;
+  width: 200px;
+  background-color: white;
+}
+
+#main-background {
+  background-image: url("../res/long-lines.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: center;
+  width: 100%;
+  z-index: 0;
+}
+
+#bottom-background {
+  background-image: url("../res/short-lines.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: center;
+  margin-bottom: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.section-marker {
+  width: 100%;
+  margin: 50px 0px;
+  overflow: hidden;
+}
+
+.section-marker img {
+  float: right;
+  height: 40px;
+  width: auto;
+  margin-right: 10%;
+  position: relative;
+}
+
+section {
+  padding: 0;
+  position: relative;
+  background: none;
+}
+
+#about .row {
+  margin-bottom: 30px;
+}
+
+.about-image {
+  vertical-align: middle;
+}
+
+.about-image img {
+  margin-left: 120px;
+  height: 80px;
+  width: auto;
+}
+
+.image-group {
+  width: 80%;
+  margin: 40px auto 0px auto;
+}
+
+.committee-images {
+  width: 23%;
+  display: inline-block;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+.committee-images img {
+  height: 80px;
+  width: auto;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.select-arrow {
+  height: auto;
+  width: 100%;
+  margin: 20px auto auto auto;
+  display: block;
+  vertical-align: bottom;
+  opacity: .4;
+  visibility: hidden;
+}
+
+.select-arrow img {
+  vertical-align: bottom;
+  margin-bottom: 0px;
+  height: 80px;
+  width: auto;
+}
+
+.committee-preview {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding: 70px 0px 120px 0px;
+}
+
+.committee-preview  h2 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.event {
+  margin: 50px 0;
+}
+
+.event h3 {
+  font-size: 1.5em;
+}
+
+.fa-angle-left, .fa-angle-right {
+  padding-top: 1px;
+  color: black;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  margin-top: 180px;
+}
+
+.carousel-item h3 {
+  text-align: center;
+}
+
+.carousel-item img {
+  height: 125px;
+  width: 125px;
+  margin:  0 auto 20px auto;
+  border-radius: 62px;
+  border: 2px solid #949494;
+}
+
+.sponsor-description {
+  width: 60%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.sponsor-icons {
+  padding-top: 30px;
+}
+
+.sponsor-icons img {
+  width: 13%;
+  margin-left: 2%;
+  margin-right: 3%;
+  height: auto;
+  border-radius: 25px;
+}
+
+.person-picture {
+  width: 25%;
+  float: left;
+  margin-top: 40px;
+}
+
+.person-picture img {
+  height: 130px;
+  width: 130px;
+  margin: 0 auto 20px auto;
+  border-radius: 75px;
+  border: 2px solid #000000;
+}
+
+.person-picture p {
+  margin-bottom: 0;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.picture-group {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.member-names {
+  font-size: 0.9em;
+  min-width: 150px;
+  width: 14%;
+  display: inline-block;
+  float: left;
+}
+
+.member-names p {
+  margin: 0;
+}
+
+.contact-form {
+  margin: 50px 0;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #cccccc;
+}
+
+.contact-input-group {
+  width: 100%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.contact-input-group label {
+  margin: 0;
+}
+
+.contact-input-group input, .contact-input-group textarea {
+  width: 100%;
+  text-align: right;
+  height: 40px;
+  border-radius: 10px;
+  padding-right: 30px;
+}
+
+.contact-submit-button button {
+  margin: auto;
+  display: block;
+  background-color: white;
+}
+
+.contact-name {
+  width: 50%;
+}
+
+.contact-name input {
+  width: 90%;
+}
+
+.contact-name label {
+  font-size: .9em;
+}
+
+.donations {
+  color: white;
+}
+
+#content {
+  background: linear-gradient(#ffffff, #eeeeee, #000000);
+  color: black;
+}
+
+footer {
+  padding-top: 20px;
+  height: 100px;
+  background-color: black;
+  border-top: 1px solid #525252;
+}
+
+footer div {
+  overflow: hidden;
+}
+
+.footer-image {
+  width: auto;
+  float: right;
+}
+
+footer div img {
+  margin: auto;
+  display: block;
+  height: 40px;
+  width: auto;
+  padding: 0px 7px;
+}
+
+.donation-options {
+  margin: 100px 0;
+  overflow: hidden;
+}
+
+.donation-coin {
+  width: 25%;
+  float: left;
+  display: inline-block;
+}
+
+.donation-coin img {
+  height: auto;
+  width: 70%;
+}
+
+.donation-coin p {
+  margin-top: 10px;
+}
+
+section {
+  margin-top: 120px;
+}
+
+#calendar-link {
+  color: #888888;
+}
+
+#calendar-link:hover {
+  color: black;
+}
+
+#events .container .row {
+  margin-bottom: 35px;
+}
+
+#events .lead {
+  margin-bottom: 0.33em;
+}
+
+.lead b {
+  font-weight: 600;
+}
+
+.follow-us {
+  float: right;
+  color: white;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.copyright {
+  color: #dddddd;
+  font-size: 9px;
+}
+.coming-soon {
+ align-content: center;
+  margin-top: 2%;
+  font-family: 'Pro-Regular';
+    font-weight: bold;
+    font-size: 60px;
+    font-color:#2E313A;
+}
